@@ -10,3 +10,16 @@ addBtn.addEventListener('click', () => {
         input.value = '';
     }
 });
+
+addBtn.addEventListener('click', () => {
+    if(input.value.trim() !== ''){
+        const li = document.createElement('li');
+        li.innerHTML = input.value + ' <button>Delete</button>';
+        list.appendChild(li);
+        input.value = '';
+
+        li.querySelector('button').addEventListener('click', () => {
+            li.remove();
+        });
+    }
+});
