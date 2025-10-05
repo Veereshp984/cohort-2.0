@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #3f3d3d;
+  color: white;
+}
+#nav{
+   display: flex;
+   justify-content: space-between;
+    padding: 10px 30px;
+}
+#nav a {
+    margin-right: 30px;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+#main>h1{
+    font-size: 300px;
+    font-weight: 200;
+    padding-left: 50px;
+    margin-top: -40px;
+}
+
+#btmleft{
+    position: absolute;
+    left:4%;
+    bottom:15%;
+    max-width: 400px;
+
+}
+#btmleft h3{
+    font-size: 35px;
+}
+#btmleft h4{
+    margin-top: 15px;
+    font-size: 25px;
+}
+#btmleft p{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#bottombar{
+    position:absolute;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    bottom: 0;
+    left: 0;
+    padding: 30px 70px;
+    
+   
+}
+#bottombar a{
+    
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+}
+#main img{
+    height: 300px;
+    position: absolute;
+}
+#main #first{
+    height: 350px;
+    top:35%;
+   left: 60%;
+}
+#main #second{
+    height: 300px;
+    top:60%;
+   left: 50%;
+}
+#main #third{
+    height: 300px;
+    top:30%;
+   left: 40%;
+}
