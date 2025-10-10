@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  perspective: 300px;
+}
+.card {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+ border: 10px;
+overflow: hidden;
+position: relative;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#bottom{
+    height: 40%;
+    width: 100%;
+    background:linear-gradient(rgb(0, 0, 0));
+    position: absolute;
+    bottom: -40%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card:hover #bottom{
+  bottom: 0;
+}
