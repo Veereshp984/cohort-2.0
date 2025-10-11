@@ -7,42 +7,70 @@
 html,body{
   height: 100%;
   width: 100%;
+   background-color:black;
 }
 main{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: grid;
-    background-color:black;
-    grid-template-columns:1fr 1fr 1fr ;
-    grid-template-rows:60px 1fr 0.5fr 0.5fr;
-    grid-template-areas: header header header
-                         section section section
-                         div-left bottom-up div-right
-                         div-left bottom-down div-right ;
-    gap: 10px;
-    padding: 10px;
-}
-header{
-    background-color: crimson;
-    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "section section section"
+                         "divleft bottom-up divright"
+                         "divleft bottom-down divright";
 }
 section{
-    background-color: #fff;
-    grid-area:section ;
-}
-#div-left{
+    grid-area: section;
     background-color: yellow;
-    grid-area: div-left;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
-#div-right{
+header{
+    grid-area: header;
     background-color: green;
-    grid-area: div-right;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#divleft{
+    grid-area: divleft;
+    background-color: blue;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}   
+#divright{
+    grid-area: divright;
+    background-color: red;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 #bottom-up{
-    background-color: blue;
     grid-area: bottom-up;
+    background-color: purple;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 #bottom-down{
-    background-color: orange;
     grid-area: bottom-down;
+    background-color: orange;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
