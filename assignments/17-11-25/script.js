@@ -96,6 +96,22 @@ main.appendChild(h1);
 
 
 
+// let start = document.querySelector('#start');
+// let stop = document.querySelector('#stop');
+// const Timer = (str)=>{
+//     console.log(str ,"hitesh",Date.now());
+// }
+
+
+// // clearInterval(intervalId)
+// let intervalId;
+// start.addEventListener("click",()=>{
+//     intervalId = setInterval(Timer,1000,"hi")
+// });
+// stop.addEventListener("click",()=>{
+//     clearInterval(intervalId);
+// })
+
 
 
 
